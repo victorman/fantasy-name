@@ -16,5 +16,5 @@ app.listen(process.env.PORT || 5000);
 // so that PathLocationStrategy can be used
 
 app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname + '/dist/fantasy-name/index.html'));
+  res.sendFile(path.join(__dirname + '/dist/fantasy-name' + req.url));
 });
