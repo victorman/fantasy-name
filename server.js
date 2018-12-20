@@ -2,8 +2,6 @@ const path = require('path');
 const express = require('express');
 const app = express();
 
-app.use(express.logger('dev'));
-
 // Run the app by serving the static files
 // in the dist directory
 
