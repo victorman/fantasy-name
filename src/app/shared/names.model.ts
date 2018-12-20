@@ -23,7 +23,7 @@ export class Names {
     'Ingred',
     'Gerta',
     'Gertrud',
-    'Joane',
+    'Joan',
     'Cruella',
     'Arya'
   ];
