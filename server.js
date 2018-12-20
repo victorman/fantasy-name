@@ -16,7 +16,7 @@ app.listen(process.env.PORT || 5000);
 
 
 app.get('/*', function(req, res, next) {
-  req.url.replace(/&?fbclid(=|%3D|%3d)[^#$/]*/gi, '');
+  req.url = req.url.replace(/&?fbclid.*/gi, '');
   next();
 }, function (req, res) {
   res.sendFile(path.join(__dirname + '/dist/fantasy-name' + req.url));
