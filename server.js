@@ -12,10 +12,13 @@ app.use(express.static(__dirname + '/dist'));
 
 app.listen(process.env.PORT || 5000);
 
-// For all GET requests, send back index.html
 // so that PathLocationStrategy can be used
 
-app.get('/*', function(req, res) {
+
+app.get('/*', function(req, res, next) {
+  req.url.replace(/&?fbclid(=|%3D|%3d)[^#$/]*/gi, '');
+  next();
+}, function (req, res) {
   res.sendFile(path.join(__dirname + '/dist/fantasy-name' + req.url));
 });
 // https://nodejs.org/api/http.html#http_class_http_incomingmessage
