@@ -1,16 +1,16 @@
 export class Names {
   public static maleFirstNames: string[] = [
-    'Alfred',
     'Ned',
     'Conan',
     'Merlin',
     'Edwin',
     'Drizzt',
-    'Drax'
+    'Drax',
+    'Zerathustra'
   ];
   public static maleLastNames: string[] = [
-    'Din-Maker',
-    'Hammer-Din',
+    'Din-maker',
+    'Hammer-din',
     'The Anvil',
     'Strongjaw',
     'Stout-drought'
@@ -20,20 +20,32 @@ export class Names {
     'Yvonne',
     'Aurora',
     'Jezabelle',
-    'Ingred'
+    'Ingred',
+    'Gerta',
+    'Gertrud',
+    'Joane',
+    'Cruella',
+    'Arya'
   ];
   public static femaleLastNames: string[] = [
     'The Seductress',
     'The Eternal Beauty',
     'The Enchantress',
-    'Duchess of Pain',
+    'Stone-daughter',
+    'The Ice Queen',
+    'Heiress of the Forge',
+    'Dark-witch',
+    'Shieldmaiden of Freyja',
+    'Devil-witch'
   ];
   public static neutralLastNames: string[] = [
     'The Terrible',
-    'Dark-Blade',
-    'Plague-Tongue',
+    'Dark-blade',
+    'Plague-tongue',
     'The Savage',
     'The Destroyer',
-    'Man-Slayer'
+    'Man-slayer',
+    'Silver-tongue',
+    'Whip-tongue'
   ];
 }
