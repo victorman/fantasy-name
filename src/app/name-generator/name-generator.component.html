@@ -1,0 +1,53 @@
+<div class="row">
+  <form class="form-inline">
+     <div class="input-group px-2">
+       <div class="input-group-prepend">
+         <div class="input-group-text">
+           <input class="form-inline" type="checkbox" [(ngModel)]="useMaleFirstNames" name="maleFirstName">
+         </div>
+       </div>
+       <span class="input-group-text">Male First</span>
+    </div>
+    <div class="input-group px-2">
+      <div class="input-group-prepend">
+        <div class="input-group-text">
+          <input class="form-inline" type="checkbox" [(ngModel)]="useMaleLastNames" name="maleLastName">
+        </div>
+      </div>
+      <span class="input-group-text">Male Last</span>
+    </div>
+    <div class="input-group px-2">
+      <div class="input-group-prepend">
+        <div class="input-group-text">
+          <input class="form-inline" type="checkbox" [(ngModel)]="useFemaleFirstNames" name="femaleFirstName">
+        </div>
+      </div>
+      <span class="input-group-text">Female First</span>
+    </div>
+    <div class="input-group px-2">
+      <div class="input-group-prepend">
+        <div class="input-group-text">
+          <input class="form-inline" type="checkbox" [(ngModel)]="useFemaleLastNames" name="femaleLastName">
+        </div>
+      </div>
+      <span class="input-group-text">Female Last</span>
+    </div>
+    <div class="input-group px-2">
+      <div class="input-group-prepend">
+        <div class="input-group-text">
+          <input class="form-inline" type="checkbox" [(ngModel)]="useNeutralLastNames" name="neutralLastName">
+        </div>
+      </div>
+      <span class="input-group-text">Neutral Last</span>
+    </div>
+  </form>
+</div>
+<div class="row">
+  <div class="col">
+    <input type="text" class="form-control" readonly [value]="getName()">
+  </div>
+  <div class="col-sm-2">
+    <button class="btn btn-primary" type="button" (click)="onClick()">Next Name</button>
+  </div>
+</div>
+
