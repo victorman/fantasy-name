@@ -8,9 +8,11 @@
           <input class="form-inline" type="checkbox" [(ngModel)]="useMaleFirstNames" name="maleFirstName">
         </div>
       </div>
+      <div class="input-group-append">
       <span class="input-group-text input-group-addon"
             [ngClass]="{success: isValid(useMaleFirstNames), danger: isInvalid(useMaleFirstNames)}">
             Male First</span>
+      </div>
     </div>
     <div class="input-group p-2">
       <div class="input-group-prepend">
@@ -19,9 +21,11 @@
           <input class="form-inline" type="checkbox" [(ngModel)]="useFemaleFirstNames" name="femaleFirstName">
         </div>
       </div>
+      <div class="input-group-append">
       <span class="input-group-text input-group-addon"
             [ngClass]="{success: isValid(useFemaleFirstNames), danger: isInvalid(useFemaleFirstNames)}">
             Female First</span>
+      </div>
     </div>
     <div class="input-group p-2">
       <div class="input-group-prepend">
@@ -30,9 +34,11 @@
           <input class="form-inline" type="checkbox" [(ngModel)]="useMaleLastNames" name="maleLastName">
         </div>
       </div>
+      <div class="input-group-append">
       <span class="input-group-text input-group-addon"
             [ngClass]="{success: isValid(useMaleLastNames), danger: isInvalid(useMaleLastNames)}">
             Male Last</span>
+      </div>
     </div>
     <div class="input-group p-2 pt-0">
       <div class="input-group-prepend">
@@ -41,9 +47,11 @@
           <input class="form-inline" type="checkbox" [(ngModel)]="useFemaleLastNames" name="femaleLastName">
         </div>
       </div>
+      <div class="input-group-append">
       <span class="input-group-text input-group-addon"
             [ngClass]="{success: isValid(useFemaleLastNames), danger: isInvalid(useFemaleLastNames)}">
       Female Last</span>
+      </div>
     </div>
     <div class="input-group p-2">
       <div class="input-group-prepend">
@@ -52,9 +60,11 @@
           <input class="form-inline" type="checkbox" [(ngModel)]="useNeutralLastNames" name="neutralLastName">
         </div>
       </div>
+      <div class="input-group-append">
       <span class="input-group-text input-group-addon"
             [ngClass]="{success: isValid(useNeutralLastNames), danger: isInvalid(useNeutralLastNames)}">
             Neutral Last</span>
+      </div>
     </div>
   </form>
 </div>

@@ -603,6 +603,7 @@ export class Names {
   ];
   public static femaleFirstNames: string[] = [
     'Ursila',
+    'Lissandra',
     'Yvonne',
     'Aurora',
     'Jezabelle',
