@@ -62,4 +62,20 @@ export class NameGeneratorComponent implements OnInit {
   getName() {
     return this.getFirstName() + ' ' + this.getLastName();
   }
+
+  isInvalid(current: boolean) {
+    return (
+      !((this.useMaleFirstNames || this.useFemaleFirstNames)
+      && (this.useNeutralLastNames || this.useFemaleLastNames || this.useMaleLastNames))
+      && current
+    );
+  }
+
+  isValid(current: boolean) {
+    return (
+      (this.useMaleFirstNames || this.useFemaleFirstNames)
+      && (this.useNeutralLastNames || this.useFemaleLastNames || this.useMaleLastNames)
+      && current
+    );
+  }
 }
